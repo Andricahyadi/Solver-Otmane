@@ -1,0 +1,120 @@
+/* CSS */
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    /* padding: 0; */
+}
+
+section.block-container {
+    width: 100%;
+    height: auto;
+}
+
+div.container-content {
+    align-content: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* Left Part */
+div.left-part {
+    background: linear-gradient(#B3E5FC, #FFFFFF);
+    width: 30%;
+    height: 670px;
+    position: relative;
+}
+
+div.left-part h1 {
+    font-size: 40px;
+    padding: 80px 40px;
+    text-transform: uppercase;
+}
+
+h1 span.bold-text {
+    font-weight: bold;
+}
+
+h1 span.thin-text {
+    font-weight: 300;
+}
+
+/* Right Part */
+div.right-part {
+    /* background: lightcyan; */
+    align-content: center;
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    height: 670px;
+}
+
+div.container-droit {
+    padding: 60px 0px;
+}
+
+div.first-part {
+    width: 100%;
+    float: left;
+}
+
+div.second-part {
+    width: 100%;    
+    float: right;
+}
+
+ul.list-droit {
+    list-style: square linear-gradient(#B3E5FC, #B3E5FC);
+}
+
+li.item-droit {
+    font-size: 36px;
+    padding: 20px 0px;
+}
+
+p.explain-text {
+    padding: 10px 0px;
+}
+
+@media (min-width: 300px) and (max-width: 670px) {
+    div.container-content {
+        flex-direction: column;
+    }
+
+    div.left-part {
+        width: 100%;
+    }
+
+    div.left-part h1 {
+        font-size: 26px;
+    }
+
+    div.right-part {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    div.container-droit {
+        padding: 0px 0px;
+    }
+
+    /* div.first-part {
+        clear: left;
+    }
+
+    div.second-part {
+        clear: right;
+    } */
+
+    li.item-droit {
+        font-size: 26px;
+    }
+
+    p.explain-text {
+        font-size: 11px;
+    }
+    
+}
